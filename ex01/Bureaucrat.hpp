@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 22:14:08 by vinda-si          #+#    #+#             */
-/*   Updated: 2026/05/11 23:35:03 by vinda-si         ###   ########.fr       */
+/*   Updated: 2026/05/11 23:49:27 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,13 @@ class Bureaucrat
 		void		decrementGrade();
 		void		signForm(Form& form);
 
-		class GradeTooHighExcepetion : public std::exception
+		class GradeTooHighException : public std::exception
 		{
 			public:
 				virtual const char* what() const throw();
 		};
 
-		class GradeTooLowExcepetion : public std::exception
+		class GradeTooLowException : public std::exception
 		{
 			public:
 				virtual const char* what() const throw();

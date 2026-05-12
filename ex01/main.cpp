@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/26 21:52:06 by vinda-si          #+#    #+#             */
-/*   Updated: 2026/05/11 23:30:46 by vinda-si         ###   ########.fr       */
+/*   Updated: 2026/05/11 23:49:43 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int main()
 	}
 	catch (std::exception &e)
 	{
-		std::cerr << "Exception caugth: " << e.what() << std::endl;
+		std::cerr << "Exception caught: " << e.what() << std::endl;
 	}
 
 	std::cout << "\n--- TEST 2: Successful Signing ---" << std::endl;

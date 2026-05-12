@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/10 21:49:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2026/05/10 22:28:21 by vinda-si         ###   ########.fr       */
+/*   Updated: 2026/05/11 23:47:58 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ const char* Form::GradeTooLowException::what() const throw()
 std::ostream& operator<<(std::ostream& os, const Form& obj)
 {
 	os	<< "Form: " << obj.getName()
-		<< " | Signed: " << (obj.getGradeToSign() ? "Yes" : "No")
+		<< " | Signed: " << (obj.getIsSigned() ? "Yes" : "No")
 		<< " | Grade to sign: " << obj.getGradeToSign()
 		<< " | Grade to execute: " << obj.getGradeToExecute();
 	return os;

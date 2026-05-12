@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/25 23:14:49 by vinda-si          #+#    #+#             */
-/*   Updated: 2026/04/26 21:17:39 by vinda-si         ###   ########.fr       */
+/*   Updated: 2026/05/11 23:49:27 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ Bureaucrat::Bureaucrat(const std::string& name, int grade) : name(name)
 {
 	std::cout << "[Bureaucrat] Parameterized Constructor called" << std::endl;
 	if (grade < 1)
-		throw Bureaucrat::GradeTooHighExcepetion();
+		throw Bureaucrat::GradeTooHighException();
 	if (grade > 150)
-		throw Bureaucrat::GradeTooLowExcepetion();
+		throw Bureaucrat::GradeTooLowException();
 	this->grade = grade;
 }
 
@@ -58,23 +58,23 @@ int Bureaucrat::getGrade() const
 void Bureaucrat::incrementGrade()
 {
 	if (this->grade - 1 < 1)
-		throw Bureaucrat::GradeTooHighExcepetion();
+		throw Bureaucrat::GradeTooHighException();
 	this->grade--;
 }
 
 void Bureaucrat::decrementGrade()
 {
 	if (this->grade + 1 > 150)
-		throw Bureaucrat::GradeTooLowExcepetion();
+		throw Bureaucrat::GradeTooLowException();
 	this->grade++;
 }
 
-const char* Bureaucrat::GradeTooHighExcepetion::what() const throw()
+const char* Bureaucrat::GradeTooHighException::what() const throw()
 {
 	return "Grade is too high! (Highest possible is 1)";
 }
 
-const char* Bureaucrat::GradeTooLowExcepetion::what() const throw()
+const char* Bureaucrat::GradeTooLowException::what() const throw()
 {
 	return "Grade is too low! (Lowest possible is 150)";
 }
