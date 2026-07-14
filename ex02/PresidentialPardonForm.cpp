@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/20 23:46:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2026/07/13 22:58:07 by vinda-si         ###   ########.fr       */
+/*   Updated: 2026/07/13 23:20:41 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ PresidentialPardonForm::PresidentialPardonForm() : AForm("Presidential Pardon Fo
 	std::cout << "[PresidentialForm] Default Constructor called" << std::endl;
 }
 
-PresidentialPardonForm::PresidentialPardonForm(const std::string& target) : AForm("Presidentil Pardon Form", 25, 5), _target(target)
+PresidentialPardonForm::PresidentialPardonForm(const std::string& target) : AForm("Presidential Pardon Form", 25, 5), _target(target)
 {
 	std::cout << "[PresidentialPardonForm] Parametrized Constructor called" << std::endl;
 }

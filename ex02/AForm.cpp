@@ -6,7 +6,7 @@
 /*   By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/10 21:49:41 by vinda-si          #+#    #+#             */
-/*   Updated: 2026/05/17 21:05:29 by vinda-si         ###   ########.fr       */
+/*   Updated: 2026/07/13 23:23:37 by vinda-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ void AForm::beSigned(const Bureaucrat& bureaucrat)
 
 void AForm::execute(Bureaucrat const & executor) const
 {
-	if (this->isSigned)
+	if (!this->isSigned)
 		throw AForm::FormNotSignedException();
 	if (executor.getGrade() > this->gradeToExecute)
 		throw AForm::GradeTooLowException();
