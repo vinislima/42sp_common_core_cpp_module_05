@@ -6,14 +6,14 @@
 #    By: vinda-si <vinda-si@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/17 20:25:03 by vinda-si          #+#    #+#              #
-#    Updated: 2026/05/17 20:40:31 by vinda-si         ###   ########.fr        #
+#    Updated: 2026/07/13 22:58:01 by vinda-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		=	forms
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
-SRC			=	main.c \
+SRC			=	main.cpp \
 				Bureaucrat.cpp \
 				AForm.cpp \
 				ShrubberyCreationForm.cpp \
